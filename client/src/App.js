@@ -4,6 +4,7 @@ import './App.css';
 import {withStyles} from '@material-ui/core/styles';
 
 import Login from './components/Login';
+import ImageClassifier from './components/ImageClassifier';
 
 
 
@@ -84,6 +85,7 @@ class App extends Component{
     return(
       <div>
       <Login/>
+      <ImageClassifier></ImageClassifier>
               
       </div>
       

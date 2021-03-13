@@ -2,6 +2,7 @@ import React, { Component, Fragment } from 'react'
 import { post } from 'axios';
 import Table from './Table'
 import '../App.css';
+import ImageClassifier from './ImageClassifier';
 
 export default class Predict extends Component {
     static defaultProps = {
@@ -115,8 +116,11 @@ handleValueChange=(e) => {
         return (
             <div className="login-page">
                 {
+                    
                     this.props.isLogin===true ? (       
+                        
                     <div className="form">
+                        
                         <h1>{this.props.isLogin}</h1>
                         <h1>{this.props.name}님이 로그인 하셨습니다~</h1>
                         <form onSubmit={this.handleFormPredict}>
@@ -124,7 +128,6 @@ handleValueChange=(e) => {
                         <input type="text" name ="distance" value={this.state.distance} onChange={this.handleValueChange} placeholder="너비"></input>
                         <input type="hidden" value={this.props.name} ></input>
                         <button type="submit">제출</button>
-                       
                         </form>
         </div>) : 
         (<div>로그인 해주세요~</div>)
