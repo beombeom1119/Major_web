@@ -85,6 +85,7 @@ class App extends Component{
     return(
       <div>
       <Login/>
+      ghg
       <ImageClassifier></ImageClassifier>
               
       </div>
