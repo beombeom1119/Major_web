@@ -84,10 +84,10 @@ class App extends Component{
     const {classes} =this.props;
     return(
       <div>
-      <Login/>
-      ghg
+      {/* <Login/> */}
+      <div>
       <ImageClassifier></ImageClassifier>
-              
+      </div>   
       </div>
       
      
