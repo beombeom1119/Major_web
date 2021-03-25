@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import Predict from './Predict';
 import '../App.css';
+import WelcomePage from './WelcomePage-motion.jsx';
 
 export default class Login extends Component {
     constructor(props){   // 초기 설정
@@ -68,7 +69,9 @@ export default class Login extends Component {
     
     render() {
         return (
+            
             <div className="login-page">
+                
                 {
                     this.state.isLogin ===false ?  (  
                         <div className="form">

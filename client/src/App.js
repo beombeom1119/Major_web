@@ -2,9 +2,9 @@ import React,{Component} from 'react';
 import './App.css';
 
 import {withStyles} from '@material-ui/core/styles';
-
+import { BrowserRouter, Route, Link } from "react-router-dom";
 import Login from './components/Login';
-import ImageClassifier from './components/ImageClassifier';
+import Predict from './components/Predict';
 
 
 
@@ -83,14 +83,7 @@ class App extends Component{
   {
     const {classes} =this.props;
     return(
-      <div>
-      {/* <Login/> */}
-      <div>
-      <ImageClassifier></ImageClassifier>
-      </div>   
-      </div>
-      
-     
+      <Login></Login>
     );
   }
 }

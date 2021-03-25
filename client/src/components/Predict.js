@@ -2,7 +2,7 @@ import React, { Component, Fragment } from 'react'
 import { post } from 'axios';
 import Table from './Table'
 import '../App.css';
-import ImageClassifier from './ImageClassifier';
+import WelcomePage from './WelcomePage-motion';
 
 export default class Predict extends Component {
     static defaultProps = {
@@ -114,15 +114,17 @@ handleValueChange=(e) => {
     render() {
         
         return (
+       
             <div className="login-page">
+                
                 {
                     
                     this.props.isLogin===true ? (       
                         
                     <div className="form">
-                        
                         <h1>{this.props.isLogin}</h1>
                         <h1>{this.props.name}님이 로그인 하셨습니다~</h1>
+                        <WelcomePage/>
                         <form onSubmit={this.handleFormPredict}>
                         <input type="text" name ="depth"value={this.state.depth} onChange={this.handleValueChange} placeholder="깊이"></input>
                         <input type="text" name ="distance" value={this.state.distance} onChange={this.handleValueChange} placeholder="너비"></input>
@@ -135,9 +137,9 @@ handleValueChange=(e) => {
 
                 
                 <Table name={this.props.name} userNum ={this.state.userNum}> name={this.props.name}</Table>
-
-         
+                
             </div>
+           
             
         ) 
     }
