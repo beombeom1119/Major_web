@@ -68,7 +68,7 @@ export default function WelcomePage() {
   return (
     <div>
       <div id="webcam-container"></div>
-      <div id="label-container"><h3>정상 확률 : {state.result1}  탈모 확률 :{state.result2}</h3></div>
+      <div id="label-container"><h3>정상일 확률 : {state.result1}  탈모일 확률 :{state.result2}</h3></div>
       <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@1.3.1/dist/tf.min.js"></script>
       <script src="https://cdn.jsdelivr.net/npm/@teachablemachine/image@0.8/dist/teachablemachine-image.min.js"></script>
     </div>
